@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Formulario Responsive</title>
+</head>
+<body>
+    
+    <div class="fondo">
+    </div>
+    <div class="formularios">
+
+        <div class="grid-2">
+                <button id="ir_formulario_1">
+                    Iniciar sesión
+                </button>
+                <button id="ir_formulario_2">
+                    registrarse
+                </button>
+        </div>
+
+        <div class="regis" id="inicio_sesion">
+            <form>
+
+                <h2 class="titulo">Iniciar Sesion</h2>
+            
+                <label for="correo_regis">E-mail</label>
+                <input type="email" name="correo" id="correo_regis" maxlength="45" placeholder="correo@ejemplo.com" required autocomplete="username">
+        
+                <label for="contraseña_regis">Contraseña</label>
+                <input type="password" name="pass" id="contraseña_regis" required autocomplete="current-password">
+        
+                <div>
+                    <label for="mostrar">Mostrar contraseña</label>
+                    <input id="mostrar" type="checkbox">
+                </div>
+        
+                <label><a href="#">¿Olvidaste tu contraseña?</a></label>
+        
+                <input type="submit" value="iniciar sesión" id="subir_inicio">
+            </form>
+        </div>
+        
+        <div id="loging">
+            <form>
+
+                <h2 class="titulo">Registrarse</h2> 
+            
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" maxlength="20" placeholder="Nombre" required>
+            
+                <label for="apellidos">Apellido</label>
+                <input type="text" name="apellidos" id="apellidos" maxlength="20" placeholder="Apellido" required>
+            
+                <label for="correo">E-mail</label>
+                <input type="email" name="correo" id="correo" maxlength="45" placeholder="correo@ejemplo.com" autocomplete="username" required>
+        
+                <label for="contraseña">Contraseña</label>
+                <input type="password" name="pass" id="contraseña" required autocomplete="current-password" minlength="8">
+        
+                <label for="rep_contraseña">Repetir contraseña</label>
+                <input type="password" name="rep_pass" id="rep_contraseña" required autocomplete="current-password">
+            
+                <div>
+                    <label for="terminos">Acepto todos los <a href="#">terminos y condiciones de servicio</a></label>
+                    <input id="terminos" type="checkbox" required>
+                </div>
+            
+                <label for="sugerencia">Sugerencia</label>
+                <textarea name="sugerencia" id="sugerencia" cols="30" rows="10" placeholder="Escribe tus sugerencias (opcional)"></textarea>
+        
+                <input type="submit" value="Registrarse" id="subir">
+            </form>
+        </div>
+    </div>
+    <script src="js/all.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
